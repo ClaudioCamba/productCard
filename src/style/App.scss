@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$Green: hsl(158, 36%, 37%);
+$DarkGreen: hsl(158, 42%, 18%);
+$DarkGrey: hsl(212, 21%, 14%);
+$Grey: hsl(228, 12%, 48%);
+$Cream: hsl(30, 38%, 92%);
+$White: hsl(0, 0%, 100%);
+$SizeP: 14px;
+$MontserratFont: 'Montserrat', serif;
+$FrauncesFont: "Fraunces", serif;
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding & margin */
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label, small {
+  line-height: 1.1;
+  display: inline-block;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body, html, #root, main {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background-color: $Cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    #product-cards-container {
+        padding: 16px;
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .product-card {
+            background-color: $White;
+            width: 100%;
+            max-width: 600px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-radius: 10px;
+            overflow: hidden;
+            align-items: center;
+
+            .product-card-image {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+
+                picture {
+                    flex: 1;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        -o-object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+
+            .product-card-info {
+                padding: 32px;
+
+                .card-label {
+                    font-family: $MontserratFont;
+                    color: $Grey;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    line-height: 1.2;
+                    letter-spacing: 5px;
+                    display: inline-block;
+                    margin-bottom: 21px;
+                }
+
+                .card-title {
+                    font-family: $FrauncesFont;
+                    color: $DarkGrey;
+                    font-size: 32px;
+                    line-height: 1;
+                    margin-bottom: 24px;
+                    font-weight: 700;
+                }
+
+                .card-desc {
+                    font-family: $MontserratFont;
+                    font-size: 14px;
+                    letter-spacing: 0.1px;
+                    line-height: 1.64;
+                    color: $Grey;
+                    margin-bottom: 29px;
+                }
+
+                .card-price {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-bottom: 28px;
+
+                    .card-current-price {
+                        font-family: $FrauncesFont;
+                        color: $Green;
+                        font-size: 32px;
+                        line-height: 1;
+                        font-weight: 700;
+                        display: inline-block;
+                    }
+
+                    .card-old-price {
+                        font-family: $MontserratFont;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $Grey;
+                        margin-left: 20px;
+                        letter-spacing: 0.5px;
+                        text-decoration: line-through;
+                        display: inline-block;
+                        line-height: 1.5;
+                    }
+
+                    .card-old-price:empty {
+                        display: none;
+                    }
+                }
+
+                .card-add-to-cart-btn {
+                    background-color: $Green;
+                    width: 100%;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                    border: unset;
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+
+                    span {
+                        font-family: $MontserratFont;
+                        color: $White;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 0.6;
+                        display: flex;
+                        align-items: center;
+                        letter-spacing: 0.4px;
+                        
+                        &::before {
+                            content: url('../assets/icon-cart.svg');
+                            margin-right: 12px;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $DarkGreen;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .product-card {
+                // max-width: 344px;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+
+                .product-card-info {
+                    padding: 24px;
+
+                    .card-label {
+                        margin-bottom: 14px;
+                    }
+                    .card-title {
+                        margin-bottom: 16px;
+                    }
+                    .card-desc {
+                        white-space: break-spaces;
+                        margin-bottom: 24px;
+                    }
+                    .card-price {
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
