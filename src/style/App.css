@@ -77,6 +77,9 @@ main #product-cards-container .product-card .product-card-info {
 }
 main #product-cards-container .product-card .product-card-info .card-label {
   font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
   color: hsl(228, 12%, 48%);
   text-transform: uppercase;
   font-size: 12px;
@@ -87,16 +90,21 @@ main #product-cards-container .product-card .product-card-info .card-label {
 }
 main #product-cards-container .product-card .product-card-info .card-title {
   font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  font-weight: 700;
   color: hsl(212, 21%, 14%);
   font-size: 32px;
   line-height: 1;
   margin-bottom: 24px;
-  font-weight: 700;
 }
 main #product-cards-container .product-card .product-card-info .card-desc {
   font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
-  letter-spacing: 0.1px;
   line-height: 1.64;
   color: hsl(228, 12%, 48%);
   margin-bottom: 29px;
@@ -110,16 +118,21 @@ main #product-cards-container .product-card .product-card-info .card-price {
 }
 main #product-cards-container .product-card .product-card-info .card-price .card-current-price {
   font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  font-weight: 700;
   color: hsl(158, 36%, 37%);
   font-size: 32px;
   line-height: 1;
-  font-weight: 700;
   display: inline-block;
 }
 main #product-cards-container .product-card .product-card-info .card-price .card-old-price {
   font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 12px;
-  font-weight: 400;
   color: hsl(228, 12%, 48%);
   margin-left: 20px;
   letter-spacing: 0.5px;
@@ -144,9 +157,11 @@ main #product-cards-container .product-card .product-card-info .card-add-to-cart
 }
 main #product-cards-container .product-card .product-card-info .card-add-to-cart-btn span {
   font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
   color: hsl(0, 0%, 100%);
   font-size: 14px;
-  font-weight: 500;
   line-height: 0.6;
   display: flex;
   align-items: center;
