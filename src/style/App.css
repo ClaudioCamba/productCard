@@ -164,6 +164,10 @@ main #product-cards-container .product-card .product-card-info .card-add-to-cart
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
+  main #product-cards-container .product-card .product-card-image picture img {
+    max-width: 600px;
+    max-height: 420px;
+  }
   main #product-cards-container .product-card .product-card-info {
     padding: 24px;
   }
