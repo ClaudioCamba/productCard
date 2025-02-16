@@ -11,8 +11,8 @@ function App() {
         <article className="product-card">
           <div className="product-card-image">
             <picture>
-              <source media='(min-width: 768px)' srcSet={productImgDesktop} />
-              <source media='(max-width: 767px)' srcSet={productImgMobile} />
+              <source media='(min-width: 633px)' srcSet={productImgDesktop} />
+              <source media='(max-width: 632px)' srcSet={productImgMobile} />
               <img src={productImgMobile} loading="lazy" alt='A Chanel perfume bottle lying on its side with the logo facing upward, surrounded by leaves.' />
             </picture>
           </div>
