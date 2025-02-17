@@ -37,10 +37,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-- Desktop Screenshot
-- Mobile Screenshot
+|  Desktop Screenshot | Mobile Screenshot  |
+|---|---|
+| ![Desktop Screenshot](https://github.com/ClaudioCamba/productCard/blob/main/public/desktop-screenshot.png)  | ![Desktop Screenshot](https://github.com/ClaudioCamba/productCard/blob/main/public/mobile-screenshot.png)  |
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
