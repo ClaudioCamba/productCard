@@ -1,4 +1,6 @@
+/* font families */
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Colours */
 /* Box sizing rules */
 *,
 *::before,
@@ -28,16 +30,13 @@ picture {
   display: block;
 }
 
-body, html, #root, main {
-  width: 100%;
-  height: 100%;
-}
-
 main {
   background-color: hsl(30, 38%, 92%);
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 main #product-cards-container {
   padding: 16px;
@@ -58,7 +57,6 @@ main #product-cards-container .product-card {
 }
 main #product-cards-container .product-card .product-card-image {
   display: flex;
-  flex-direction: column;
   height: 100%;
 }
 main #product-cards-container .product-card .product-card-image picture {
@@ -69,8 +67,8 @@ main #product-cards-container .product-card .product-card-image picture img {
   height: 100%;
   object-fit: cover;
   -o-object-fit: cover;
+  object-position: center;
   -o-object-position: center;
-     object-position: center;
 }
 main #product-cards-container .product-card .product-card-info {
   padding: 32px;
