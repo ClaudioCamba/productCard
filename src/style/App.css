@@ -28,6 +28,7 @@ picture {
   max-width: 100%;
   height: auto;
   display: block;
+  overflow: hidden;
 }
 
 main {
@@ -180,7 +181,7 @@ main #product-cards-container .product-card .product-card-info .card-add-to-cart
   main #product-cards-container .product-card .product-card-image picture img {
     max-width: 600px;
     max-height: 420px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 10px;
   }
   main #product-cards-container .product-card .product-card-info {
     padding: 24px;
