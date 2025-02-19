@@ -66,6 +66,7 @@ picture {
   max-width: 100%;
   height: auto;
   display: block;
+  overflow: hidden;
 }
 
 main {
@@ -216,7 +217,7 @@ main {
                         img {
                             max-width: 600px;
                             max-height: 420px;
-                            border-radius: 10px 10px 0 10px;
+                            border-radius: 10px 10px 0 0;
                         }
                     }
                 }
