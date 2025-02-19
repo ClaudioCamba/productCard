@@ -90,7 +90,6 @@ main {
             display: grid;
             grid-template-columns: 1fr 1fr;
             border-radius: 10px;
-            overflow: hidden;
             align-items: center;
 
             .product-card-image {
@@ -107,6 +106,7 @@ main {
                         -o-object-fit: cover;
                         object-position: center;
                         -o-object-position: center;
+                        border-radius: 10px 0 0 10px;
                     }
                 }
             }
@@ -216,6 +216,7 @@ main {
                         img {
                             max-width: 600px;
                             max-height: 420px;
+                            border-radius: 10px 10px 0 0;
                         }
                     }
                 }

@@ -52,7 +52,6 @@ main #product-cards-container .product-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-radius: 10px;
-  overflow: hidden;
   align-items: center;
 }
 main #product-cards-container .product-card .product-card-image {
@@ -69,6 +68,7 @@ main #product-cards-container .product-card .product-card-image picture img {
   -o-object-fit: cover;
   object-position: center;
   -o-object-position: center;
+  border-radius: 10px 0 0 10px;
 }
 main #product-cards-container .product-card .product-card-info {
   padding: 32px;
@@ -180,6 +180,7 @@ main #product-cards-container .product-card .product-card-info .card-add-to-cart
   main #product-cards-container .product-card .product-card-image picture img {
     max-width: 600px;
     max-height: 420px;
+    border-radius: 10px 10px 0 0;
   }
   main #product-cards-container .product-card .product-card-info {
     padding: 24px;
